@@ -1,0 +1,25 @@
+import tkinter as tk
+from tkinter import messagebox
+
+root = tk.Tk()
+root.title("Түймелер және Хабарламалар")
+
+def show_message1():
+    messagebox.showinfo("Қызық факт", "Нил Джостен шын мәнінде Натаниель Веснинский")
+
+def show_message2():
+    messagebox.showinfo("Қызық факт", "Эндрюдің бойы 163, бірақ ол ең қауіпті ойыншы")
+
+def show_message3():
+    messagebox.showinfo("Қызық факт", "Номер 2")
+
+button1 = tk.Button(root, text="Нил Джостен", command=show_message1)
+button1.pack(pady=10)
+
+button2 = tk.Button(root, text="Эндрю Минярд", command=show_message2)
+button2.pack(pady=10)
+
+button3 = tk.Button(root, text="Кевин Дэй", command=show_message3)
+button3.pack(pady=10)
+
+root.mainloop()
